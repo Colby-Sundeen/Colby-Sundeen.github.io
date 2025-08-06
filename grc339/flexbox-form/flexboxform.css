@@ -90,7 +90,7 @@ textarea {
 	color: #777;
 	}
 
-@media only screen and (min-width: 40em) {
+@media only screen and (min-width: 50em) {
 
   div.container {
     margin: 1em auto;
