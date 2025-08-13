@@ -1,0 +1,161 @@
+/*CSS document*/
+
+html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+/* Container */
+.container {
+    max-width: 50em;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+/* Typography */
+h1, h2 {
+    font-family: serif;
+}
+
+p, nav, figcaption {
+    font-family: sans-serif;
+}
+
+/* Header */
+header {
+    margin-bottom: 2em;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 1em;
+    line-height: 1;
+    width: 8em;
+}
+
+h1 a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    margin-bottom: 0.5em;
+}
+
+nav a {
+    color: #4682B4;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* General sections */
+section {
+    margin-bottom: 2em;
+}
+
+section a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* All h2 elements */
+h2 {
+    font-size: 2em;
+    color: #4682B4;
+    margin: 0.5em 0;
+    line-height: 1.2;
+}
+
+/* Specific styling for main story h2 */
+section.mainstory h2 {
+    font-size: 2.5em;
+}
+
+/* Paragraphs */
+p {
+    line-height: 1.4;
+    margin-bottom: 1em;
+}
+
+/* Figures */
+figure {
+    margin-bottom: 0.5em;
+}
+
+figcaption {
+    font-style: italic;
+    color: #666;
+    font-size: 0.9em;
+    margin-top: 0.5em;
+    line-height: 1.3;
+}
+
+/* Article page */
+article {
+    margin-bottom: 2em;
+}
+
+article h2 {
+    font-size: 2.5em;
+    margin: 1em 0;
+}
+
+article p {
+    margin-bottom: 1.5em;
+    line-height: 1.5;
+}
+
+article figure {
+    margin: 2em 0;
+}
+
+/* Aside */
+aside {
+    margin-top: 3em;
+}
+
+aside section {
+    margin-bottom: 1.5em;
+}
+
+aside h2 {
+    font-size: 1.5em;
+}
+
+/* Footer */
+footer {
+    border-top: 1px solid #ccc;
+    padding-top: 1em;
+    margin-top: 3em;
+    text-align: center;
+    color: #666;
+}
+
+/* Responsive design */
+@media (min-width: 50em) {
+    .container {
+        padding: 2em;
+    }
+    
+    nav li {
+        display: inline-block;
+        margin-right: 2em;
+        margin-bottom: 0;
+    }
+    
+    h1 {
+        margin-bottom: 0.5em;
+    }
+}
