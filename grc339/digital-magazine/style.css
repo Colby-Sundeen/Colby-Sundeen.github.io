@@ -2,39 +2,48 @@
 
 html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;}
 
+body {
+    background-color: #f8f8f8;
+}
+
 img {
     width: 100%;
     display: block;
 }
 
-/* Container */
+
 div.container, div.home-container {
     max-width: 50em;
     margin: 0 auto;
     padding: 1em;
+    background-color: #ffffff;
 }
 
-/* Typography */
+
 h1, h2 {
-    font-family: serif;
+    font-family: "boucherie-block", serif;
 }
 
 p, nav, figcaption {
     font-family: sans-serif;
 }
 
-/* Header */
+
 header,footer {
     margin-bottom: 2em;
     margin-top: 0;
 }
 div.home-container aside {
-    background: none;
-    padding: 0;
+    background: #2C1B47;
+    padding: 1.5em;
     margin-top: 0;
+    color: #ffffff;
 }
 div.container aside {
     margin-top: 0;
+    background: #2C1B47;
+    padding: 1.5em;
+    color: #ffffff;
 }
 h1 {
     font-size: 3em;
@@ -49,7 +58,12 @@ h1 a {
     color: #000;
 }
 
-/* Navigation */
+h1 img {
+    width: 4em;
+    height: auto;
+}
+
+
 nav ul {
     list-style: none;
 }
@@ -59,7 +73,7 @@ nav li {
 }
 
 nav a {
-    color: #4682B4;
+    color: #5A2D91;
     text-decoration: none;
     font-size: 1.1em;
 }
@@ -68,7 +82,7 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* General sections */
+
 section {
     margin-bottom: 2em;
 }
@@ -78,26 +92,36 @@ section a {
     color: inherit;
 }
 
-/* All h2 elements */
+
 h2 {
     font-size: 2em;
-    color: #4682B4;
+    color: #5A2D91;
     margin: 0.5em 0;
     line-height: 1.2;
 }
 
-/* Specific styling for main story h2 */
+
 section.mainstory h2 {
     font-size: 2.5em;
 }
 
-/* Paragraphs */
+
+aside h2 {
+    color: #8B63C7;
+    font-size: 1.5em;
+}
+
+aside a {
+    color: #ffffff;
+}
+
+
 p {
     line-height: 1.4;
     margin-bottom: 1em;
 }
 
-/* Figures */
+
 figure {
     margin-bottom: 0.5em;
     margin-top: 0;
@@ -111,7 +135,7 @@ figcaption {
     line-height: 1.3;
 }
 
-/* Article page */
+
 article {
     margin-bottom: 2em;
 }
@@ -130,7 +154,7 @@ article figure {
     margin: 2em 0;
 }
 
-/* Aside */
+
 aside {
     margin-top: 3em;
 }
@@ -139,21 +163,36 @@ aside section {
     margin-bottom: 1.5em;
 }
 
-aside h2 {
-    font-size: 1.5em;
-}
 
-/* Footer */
 footer {
-    border-top: 1px solid #ccc;
+    border-top: 0.0625em solid #5A2D91;
     padding-top: 1em;
     margin-top: 3em;
-    text-align: center;
+    text-align: left;
     color: #666;
     box-sizing: border-box;
+    margin-left: -1em;
+    margin-right: -1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: #8B63C7;
+    color: #ffffff;
 }
 
-/* Responsive design */
+
+@media (max-width: 40em) {
+    
+    figure {
+        margin-left: -1em;
+        margin-right: -1em;
+    }
+    
+    figcaption {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+}
+
 @media (min-width: 40em) {
     .container {
         padding: 2em;
@@ -167,6 +206,18 @@ footer {
     
     h1 {
         margin-bottom: 0.5em;
+    }
+    
+    footer {
+        margin-left: -2em;
+        margin-right: -2em;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    
+    figure {
+        margin-left: 0;
+        margin-right: 0;
     }
 }
 
