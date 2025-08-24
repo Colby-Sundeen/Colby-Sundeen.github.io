@@ -20,6 +20,13 @@ div.container, div.home-container {
 }
 
 
+footer {
+    max-width: none;
+    width: 100%;
+    margin: 0;
+}
+
+
 h1, h2 {
     font-family: "boucherie-block", serif;
 }
@@ -171,17 +178,14 @@ footer {
     text-align: left;
     color: #666;
     box-sizing: border-box;
-    margin-left: -1em;
-    margin-right: -1em;
-    padding-left: 1em;
-    padding-right: 1em;
     background-color: #8B63C7;
     color: #ffffff;
+   grid-column: 1 / -1;
 }
 
 
-@media (max-width: 40em) {
-    
+@media (max-width: 39.9em) {
+
     figure {
         margin-left: -1em;
         margin-right: -1em;
@@ -209,8 +213,6 @@ footer {
     }
     
     footer {
-        margin-left: -2em;
-        margin-right: -2em;
         padding-left: 2em;
         padding-right: 2em;
     }
@@ -258,7 +260,7 @@ footer {
         flex-direction: column;
      }
      section.mainstory a figure {
-        flex: 1 0 12em;
+        flex: 0 0 8em;
         display: flex;
      }
      section.mainstory figure img {
