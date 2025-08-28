@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://use.typekit.net/abc1def.css" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Newsletter Subscription - Kings Korner</title>
+
+        <!-- Helpful meta tags to fight GitHub aggressive caching-->
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="0" />
+    </head>	
+
+    <body>
+        <div class="newsletter-container">
+            
+            <header>
+                <h1>
+                    <a href="index.html">
+                        <img src="logo.svg" alt="Kings Korner Magazine logo featuring Sacramento Kings branding." />
+                    </a>
+                </h1>
+                <nav>
+                    <ul>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Roster</a></li>
+                        <li><a href="#">Games</a></li>
+                        <li><a href="#">Stats</a></li>
+                        <li><a href="#">History</a></li>
+                        <li><a href="#">Fan Zone</a></li>
+                        <li><a href="#">Opinion</a></li>
+                        <li><a href="photogallery.html">Photo Gallery</a></li>
+                        <li><a href="newsletter.html">Subscribe to Our Newsletter</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <main class="newsletter-main">
+                <div class="newsletter-intro">
+                    <img src="logo.svg" alt="Kings Korner Newsletter subscription banner featuring Sacramento Kings purple and black color scheme." />
+                    <h2>Stay Connected with Kings Korner</h2>
+                    <p>Get the latest Sacramento Kings news, analysis, and exclusive content delivered straight to your inbox. Choose the newsletters that match your interests and never miss a beat of the Kings action.</p>
+                </div>
+                
+                <form class="newsletter-form" action="#" method="post">
+                    <div class="form-container">
+                        <div class="form-section">
+                            <h3>Personal Information</h3>
+                            <div class="input-group">
+                                <label for="fullName">Full Name</label>
+                                <input type="text" id="fullName" name="fullName" required />
+                            </div>
+                            <div class="input-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required />
+                            </div>
+                        </div>
+                        
+                        <div class="form-section">
+                            <h3>Newsletter Preferences</h3>
+                            <p>Select the newsletters you'd like to receive:</p>
+                            <div class="checkbox-group">
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="gameRecap" name="newsletters" value="gameRecap" />
+                                    <label for="gameRecap">
+                                        <strong>Game Recaps & Analysis</strong><br>
+                                        Get detailed breakdowns of every Kings game, including player performances, key moments, and strategic analysis. Delivered after each game.
+                                    </label>
+                                </div>
+                                
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="weeklyRoundup" name="newsletters" value="weeklyRoundup" />
+                                    <label for="weeklyRoundup">
+                                        <strong>Weekly Kings Roundup</strong><br>
+                                        A comprehensive weekly digest featuring the latest news, rumors, injury updates, and upcoming games. Perfect for staying current with all things Kings.
+                                    </label>
+                                </div>
+                                
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="insiderAccess" name="newsletters" value="insiderAccess" />
+                                    <label for="insiderAccess">
+                                        <strong>Insider Access & Exclusive Content</strong><br>
+                                        Get behind-the-scenes stories, exclusive interviews, draft analysis, and premium content not available anywhere else. For the true Kings insider.
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="submit-button">Subscribe to Newsletter</button>
+                    </div>
+                </form>
+            </main>
+
+            <footer>
+                <p>© 2025 Kings Korner Magazine. All rights reserved. | Sacramento Kings coverage and analysis.</p>
+            </footer>
+        </div>
+
+    </body>
+</html>
